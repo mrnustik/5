@@ -6,7 +6,7 @@ using CookBook.BL.Factories;
 
 namespace CookBook.BL.Repository
 {
-    class IngredientRepository : IIngredientRepository
+    public class IngredientRepository : IIngredientRepository
     {
         private readonly IDbContextFactory dbContextFactory;
 

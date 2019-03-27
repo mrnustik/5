@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CookBook.BL.Factories
 {
-    class DbContextFactory : IDbContextFactory
+    public class DbContextFactory : IDbContextFactory
     {
         public CookBookDbContext CreateDbContext()
         {

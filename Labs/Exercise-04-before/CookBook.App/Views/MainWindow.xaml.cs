@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CookBook.App.ViewModels;
 
 namespace CookBook.App
 {
@@ -20,9 +21,15 @@ namespace CookBook.App
     /// </summary>
     public partial class MainWindow : Window
     {
+        private MainViewModel viewModel = new MainViewModel();
+
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = viewModel;
+            viewModel.Load();
         }
+
+
     }
 }
