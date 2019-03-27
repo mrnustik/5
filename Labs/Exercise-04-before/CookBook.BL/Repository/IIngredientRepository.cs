@@ -7,7 +7,7 @@ namespace CookBook.BL.Repository
 {
     public interface IIngredientRepository
     {
-        IngredientListModel GetAll();
+        IEnumerable<IngredientListModel> GetAll();
         IngredientDetailModel GetById(Guid id);
         IngredientDetailModel Create(IngredientDetailModel model);
         void Update(IngredientDetailModel model);
